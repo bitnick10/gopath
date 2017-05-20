@@ -6,6 +6,17 @@
 # Folders
 _obj
 _test
+src/golang.org
+src/gopkg.in
+src/sourcegraph.com
+
+# only bitnick folder
+src/github.com
+!/src/github.com
+/src/github.com/*
+!/src/github.com/bitnick10
+
+
 
 # Architecture specific extensions/prefixes
 *.[568vq]
