@@ -237,11 +237,12 @@ func NewChart(id, name string, period Period, beginTime, endTime time.Time) *Cha
 	host := "192.168.0.170"
 	// host := "127.0.0.1"
 	port := "5432"
-	password := "tangbei"
+	user := "aaa"
+	password := "aaa"
 
 	cc.sticks = make([]Candlestick, 0)
 
-	connectString := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, "postgres", password, dbname)
+	connectString := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 
 	// fmt.Println(connectString)
 	// fmt.Println(connectString)
